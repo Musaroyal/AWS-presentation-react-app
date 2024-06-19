@@ -1,0 +1,53 @@
+
+
+/* Container Styles */
+.container {
+    padding: 60px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.team {
+    padding: 60px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 35%;
+    border-radius: 50px;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.images {
+    float: left;
+    width: 25%;
+    padding: 3px;
+    text-align: center;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
