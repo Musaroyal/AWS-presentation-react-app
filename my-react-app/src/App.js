@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./components/Navbar";
 import Home from './pages/Home';
 import About from './pages/About';
+import Ussd from './pages/Ussd'
 import Testimonial from "./pages/Testimonial";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     case "/testimonial":
       Component = <Testimonial />;
       break;
+    case "/ussd":
+      Component = <Ussd />;
+        break;
     default:
       Component = <Home />;  // You can also create a 404 component for better user experience
   }

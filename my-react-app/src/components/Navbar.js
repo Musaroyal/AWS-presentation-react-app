@@ -3,11 +3,12 @@ import { Children } from "react"
 export default function Navbar(){
     const path = window.location.pathname
     return <nav className="nav">
-        <a href="" className="site-title">AWS Cohort</a>
+        <a href="/home" className="site-title">AWS Cohort</a>
         <ul>
         <CustomLink href="/home">Home</CustomLink>
         <CustomLink href="/about">About</CustomLink>
         <CustomLink href="/testimonial">Testimonial</CustomLink>
+        <CustomLink href="/ussd">Ussd</CustomLink>
         </ul>
     </nav>
 }

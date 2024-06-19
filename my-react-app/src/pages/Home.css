@@ -1,13 +1,10 @@
-
-
-/* Container Styles */
 .container {
     padding: 60px;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
     background: #fff;
     text-align: center;
     margin: 20px auto;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
 }
 
@@ -40,14 +37,15 @@ h3 {
 }
 
 .images {
-    float: left;
     width: 25%;
     padding: 3px;
+    display: inline-block;
     text-align: center;
+    vertical-align: top; /* Added to align images at the top */
 }
 
 .images img {
-    width: 100%;
+    width: 100%; /* Set to 100% to fit within the container */
     border-radius: 10px;
 }
 
@@ -74,43 +72,29 @@ h3 {
 }
 
 .team-member img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: filter 0.3s ease;
 }
 
-.team-member .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 50%;
-    padding: 20px;
-}
-
-.team-member.clicked img {
-    filter: blur(5px);
-}
-
-.team-member.clicked .overlay {
-    opacity: 1;
-}
-
 .team-member p {
     margin-top: 10px;
     font-size: 16px;
-    font-weight: bold;
+    
 }
 
+.picture-row{
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 20px;
+}
 
+.picture-row img{
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+    flex: 1; /* Allows images to grow/shrink to fill the container */
+    margin: 5px;
+}

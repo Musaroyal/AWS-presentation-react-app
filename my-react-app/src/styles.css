@@ -1,10 +1,5 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
     margin: 0;
-
 }
 
 .container{
@@ -14,11 +9,15 @@ body{
 .nav{
     background-color: #333;
     color: white;
+    position: fixed;
+    width:99%;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+   
 
 }
 
